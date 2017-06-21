@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="sigmultitool.contribution1"
+			 nameFilter="*.sig">
+         <menu
+               label="Sequential Code Generation"
+               path="additions"
+               id="sigmultitool.menu2">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="SeqCode"
+               class="sigmultitool.popup.actions.SeqCode"
+               menubarPath="sigmultitool.menu2/group1"
+               enablesFor="1"
+               id="sigmultitool.newAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="sigmultitool.contribution2"
+			 nameFilter="*.sig">
+         <menu
+               label="Multi-core Code Generation"
+               path="additions"
+               id="sigmultitool.menu3">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="MultiCode"
+               class="sigmultitool.popup.actions.MultiCode"
+               menubarPath="sigmultitool.menu3/group1"
+               enablesFor="1"
+               id="sigmultitool.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
+

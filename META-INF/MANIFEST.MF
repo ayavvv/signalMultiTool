@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SigMultiTool Plug-in
+Bundle-SymbolicName: SigMultiTool;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: sigmultitool.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Eclipse-LazyStart: true
+Bundle-ClassPath: res/jdd_104.jar,
+ .
